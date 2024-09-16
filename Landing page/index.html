@@ -11,13 +11,30 @@
 
 <body>
     <nav class="p-3 flex bg-white justify-between items-center">
-        <a href="#" id="brand" class="flex gap-2 items-center">
-            <img src="./assets/asset 0.png" alt="logo">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img class="object-cover max-w-12 max-h-12" src="./assets/asset 0.png" alt="Logo">
             <span class="text-lg font-medium font-display">ToDesktop</span>
         </a>
-        <button class="p-2" onclick="handleMenu()">
+        <!-- <button class="p-2" onclick="handleMenu()">
             <i class=" fa-solid fa-bars text-gray600"></i>
-        </button>
+        </button> -->
+
+        <div id="nav-menu" class="hidden lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-primary">Pricing</a>
+            <a href="#" class="font-medium hover:text-primary">Docs</a>
+            <a href="#" class="font-medium hover:text-primary">Changelog</a>
+            <a href="#" class="font-medium hover:text-primary">Blogs</a>
+            <a href="#" class="font-medium hover:text-primary">Login</a>
+        </div>
+
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button class="flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <img src="./assets/asset 1.svg" alt="">
+                <span class="font-display font-medium">Electron Developers</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
     </nav>
 </body>
 
